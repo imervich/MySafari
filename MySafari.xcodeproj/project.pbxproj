@@ -21,6 +21,7 @@
 		2C4607FF198032CC007FEBF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4607E1198032CC007FEBF5 /* UIKit.framework */; };
 		2C460807198032CC007FEBF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C460805198032CC007FEBF5 /* InfoPlist.strings */; };
 		2C460809198032CC007FEBF5 /* MySafariTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C460808198032CC007FEBF5 /* MySafariTests.m */; };
+		2C46081319803443007FEBF5 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C46081219803443007FEBF5 /* CheckMate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2C460804198032CC007FEBF5 /* MySafariTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MySafariTests-Info.plist"; sourceTree = "<group>"; };
 		2C460806198032CC007FEBF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C460808198032CC007FEBF5 /* MySafariTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySafariTests.m; sourceTree = "<group>"; };
+		2C46081219803443007FEBF5 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CheckMate.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C46081319803443007FEBF5 /* CheckMate.framework in Frameworks */,
 				2C4607E0198032CC007FEBF5 /* CoreGraphics.framework in Frameworks */,
 				2C4607E2198032CC007FEBF5 /* UIKit.framework in Frameworks */,
 				2C4607DE198032CC007FEBF5 /* Foundation.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		2C4607DC198032CC007FEBF5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C46081219803443007FEBF5 /* CheckMate.framework */,
 				2C4607DD198032CC007FEBF5 /* Foundation.framework */,
 				2C4607DF198032CC007FEBF5 /* CoreGraphics.framework */,
 				2C4607E1198032CC007FEBF5 /* UIKit.framework */,
@@ -376,6 +380,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MySafari/MySafari-Prefix.pch";
 				INFOPLIST_FILE = "MySafari/MySafari-Info.plist";
@@ -389,6 +397,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MySafari/MySafari-Prefix.pch";
 				INFOPLIST_FILE = "MySafari/MySafari-Info.plist";
